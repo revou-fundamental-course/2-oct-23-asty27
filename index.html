@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/stale.css"
+    <link rel="stylesheet" href="css/stale.css">
     <title>Kalkulator Suhu</title>
 </head>
 <body>
@@ -11,8 +11,32 @@
         <h1>Kalkulator Suhu</h1>
     </header>
     <main>
-        <label for="input-field"></label>
-        <input id="input-field" type="number" placeholder="0">
+        <p>Masukkan suhu derajat Celsius (°C) ke kotak dibawah,lalu klik tombol konversi
+            untuk mendaptkan hasil konversi dalam bentuk Fahrenheit (°F).</p>
+        <section class="input-section">
+            <label for="input-field">Masukkan suhu dalam Celsius (°C):</label>
+            <input id="input-field" type="number" placeholder="0">
+            <div id="input-button"> 
+                <button id="konversiButton">Konversi</button>
+                <button id="resetButton">Reset</button>
+                <button id="reverseButton">Reverse</button>
+            </div>
+        </section>
+        <section class="result-section">
+            <h2>Hasil Konversi:</h2>
+            <table id="result-table">
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+        <section class="calculation-section">
+            <h2>Kalkulasi:</h2>
+            <table id="calculation-table">
+                <tbody>
+                </tbody>
+            </table>
+        </section>
     </main>
-</body>
+    </body>
+    <script src="js\script.js"></script>
 </html>
